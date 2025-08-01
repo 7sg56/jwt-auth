@@ -1,6 +1,11 @@
 # Dependencies
 node_modules/
 server/node_modules/
+client/node_modules/
+
+# Build outputs
+client/dist/
+client/build/
 
 # Environment variables
 .env

@@ -109,7 +109,14 @@ export const logout = async (req, res) => {
 export const sendVerifyOtp = async (req, res) => {
     try {
         const {userId} = req.body;
+        const user = await userModel.findById(userId);
+        if(!user ) {
+            return res.json({su})
+        }
+        
+
     } catch (error) {
         res.json({success: false, message: error.message});
     }
+
 }
